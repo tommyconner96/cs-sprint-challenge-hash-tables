@@ -1,8 +1,15 @@
 def has_negatives(a):
-    """
-    YOUR CODE HERE
-    """
-    # Your code here
+    index = {}
+    result = []
+
+    for i in a:
+        index[i] = i
+        
+    for i in index:
+        # print(i, index[i])
+        j = -i
+        if j > 0 and j in index:
+            result.append(j)
 
     return result
 
